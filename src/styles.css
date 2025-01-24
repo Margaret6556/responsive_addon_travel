@@ -3,7 +3,7 @@ body {
   background: white;
 }
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -15,4 +15,9 @@ header {
   color: white;
   text-align: center;
   padding: 100px;
+}
+
+.header a {
+  padding: 10px 5px;
+  color: blue;
 }
