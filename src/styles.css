@@ -1,20 +1,31 @@
 body {
   font-family: "poppins", sans-serif;
-  background: rgb(81, 197, 240);
+  background: #02113c;
 }
 .container {
   max-width: 1400px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
-.grids {
+.responsive-iframe {
+  place-self: center; /* both horizontal and vertical alignment */
+}
+
+.grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  row-gap: 15px;
+  grid-gap: 64px;
 }
 
-section {
-  max-width: 1200px;
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section header {
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -29,7 +40,6 @@ header {
   color: white;
   text-align: center;
   padding: 100px;
-  border-radius: 15px;
 }
 
 header h1 {
@@ -52,11 +62,23 @@ header h3 {
 }
 
 header a {
-  color: white;
-  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  margin: 16px 32px;
+  margin: 20px 32px;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: white;
+  padding: 50px 0;
 }
 
 @media (max-width: 960px) {
@@ -72,6 +94,10 @@ header a {
   header h3 {
     font-size: 26px;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 footer {
@@ -83,15 +109,14 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px 20px;
-  border-radius: 15px;
 }
 
 footer h3 {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 footer p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
@@ -100,7 +125,7 @@ footer p {
 
 footer a {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
