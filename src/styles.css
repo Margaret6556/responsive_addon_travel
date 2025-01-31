@@ -8,11 +8,12 @@ body {
 }
 .grid {
   display: grid;
-  grid-gap: 38px;
+  grid-gap: 64px;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+  row-gap: 0;
 }
 
 .grid-3-columns {
@@ -60,7 +61,7 @@ header h2 {
   font-size: 48px;
   font-weight: 400;
   line-height: 1.5;
-  margin: 0;
+  margin: 30px 0;
   text-shadow: 1px 2px 4px #000;
 }
 
@@ -75,8 +76,9 @@ header a {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  margin: 20px 32px;
+  margin: 40px 32px;
   padding: 16px 32px;
+  border-radius: 10px;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -118,7 +120,7 @@ main h5 {
   font-size: 18px;
   line-height: 1;
   color: #03134d;
-  padding: 0px;;
+  padding: 0px;
 }
 
 main p {
@@ -152,8 +154,7 @@ section .secondary {
 }
 
 .card-header {
-  padding: 30 auto;
-  display: block;
+  aspect-ratio: auto;
 }
 
 .card-body {
@@ -172,7 +173,16 @@ section .secondary {
   font-weight: 700;
   background-color: #03134d;
   text-transform: uppercase;
-  padding: 20px 100px;
+  padding: 20px 60px;
+}
+
+header img {
+  width: 100%;
+}
+
+.embed {
+  aspect-ratio: 1/1;
+  width: 100%;
 }
 
 footer {
@@ -248,5 +258,13 @@ footer li {
     align-self: center;
     width: 100%;
     height: 100%;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
