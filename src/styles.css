@@ -8,7 +8,7 @@ body {
 }
 .grid {
   display: grid;
-  grid-gap: 48px;
+  grid-gap: 38px;
 }
 
 .grid-2-columns {
@@ -20,7 +20,7 @@ body {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -45,7 +45,7 @@ header {
   background-position: center;
   color: white;
   text-align: center;
-  padding: 10px 10px;
+  padding: 240px 0;
 }
 
 header h1 {
@@ -108,7 +108,7 @@ main h3 {
 main h4 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1;
   color: #03134d;
   margin: 0;
 }
@@ -116,9 +116,9 @@ main h4 {
 main h5 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1;
   color: #03134d;
-  margin: 0;
+  padding: 0px;;
 }
 
 main p {
@@ -165,14 +165,14 @@ section .secondary {
 }
 
 .card .btn {
-  display: inline-block;
+  display: block;
   color: white;
   font-size: 20px;
-  padding: 20px 120px;
   text-decoration: none;
   font-weight: 700;
   background-color: #03134d;
   text-transform: uppercase;
+  padding: 20px 100px;
 }
 
 footer {
