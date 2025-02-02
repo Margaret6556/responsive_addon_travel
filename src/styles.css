@@ -13,11 +13,15 @@ body {
 }
 
 .grid-2-columns {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrower {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
@@ -201,6 +205,7 @@ footer h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  text-align: left;
 }
 
 footer p {
@@ -214,7 +219,7 @@ footer p {
 footer a {
   color: white;
   font-size: 14px;
-  cursor: progress;
+  cursor: pointer;
 }
 
 footer li {
@@ -249,8 +254,16 @@ footer li {
     grid-gap: 32px;
   }
 
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+
   section {
-    padding: 15px;
+    padding: 32px;
   }
 
   .responsive-iframe {
