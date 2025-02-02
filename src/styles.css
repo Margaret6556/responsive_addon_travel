@@ -3,7 +3,6 @@ body {
   background: #03134d;
 }
 .container {
-  max-width: 1400px;
   margin: 0 auto;
   padding: 0 100px;
 }
@@ -167,16 +166,24 @@ section .secondary {
   font-weight: 700;
   background-color: #03134d;
   text-transform: uppercase;
-  padding: 20px 60px;
+  text-align: center;
+  padding: 16px 32px;
+  margin: 40px 32px;
 }
 
 header img {
   width: 100%;
 }
 
-.embed {
+.instagram-embed {
   aspect-ratio: 1/1;
   width: 100%;
+}
+
+.instagram-media-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
